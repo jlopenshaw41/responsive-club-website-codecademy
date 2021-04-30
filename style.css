@@ -1,3 +1,83 @@
 body {
-    font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4e3d5;
+}
+
+.container {
+  display: grid;
+  grid-template: 75px 1fr 75px / 1fr;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: 1 / 1 / 2 / span 12;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+nav {
+  width: 75%;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+li {
+  padding: 25px;
+  list-style-type: none;
+}
+
+main {
+  display: grid;
+  grid-template: repeat(13, 1fr) / repeat(12, 1fr);
+  height: 2000px;
+}
+
+.photo {
+  grid-area: 2 / 4 / 7 / span 12;
+}
+
+h1 {
+  background-color: white;
+  text-align: center;
+  padding: 1em;
+  grid-area: 4 / 2 / span 1 / 10;
+}
+
+.about {
+  grid-area: 6 / 6 / span 2 / span 6;
+  background-color: white;
+  padding: 25px;
+  font-size: 1.1em;
+}
+
+.month {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: white;
+}
+
+.march {
+  grid-area: 9 / 3 / span 2 / span 2;
+}
+
+.april {
+  grid-area: 9 / 6 / span 2 / span 2;
+}
+
+.may {
+  grid-area: 9 / 9 / span 2 / span 2;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: 3 / 1 / span 1 / span 1;
+  font-weight: bold;
+  font-size: 1.2em;
 }
